@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Custom Drag and Drop </title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" src="https://www.coursera.org/widget/coursera-connect.css">
+    <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+<ul id="allLabels">
+<li class="label" drag-id="Ventriculus" correct="false"> Ventriculus </li>
+<li class="label" drag-id="Ileum" correct="false"> Ileum </li>
+<li class="label" drag-id="Rectum" correct="false"> Rectum </li>
+<li class="label" drag-id="Crop" correct="false"> Crop </li>
+<li class="label" drag-id="Proventriculus" correct="false"> Proventriculus </li>
+<li class="label" drag-id="Malpighian" tubules="" correct="false"> Malpighian tubules </li> <li class="label" drag-id="Colon" correct="false"> Colon </li>
+</ul>
+
+            <div id="interface">
+               
+                <button id="reset"> Reset </button>
+                <button id="submit" style="background-color:#c6ebd9"> Submit </button>
+            </div>
+
+        </div>
+
+<div id="allParts"> <ul>
+<li class="dropzone" id="blank1" drop-id="Ventriculus" style="top: 357px; left: 261px;"></li> <li class="dropzone" id="blank2" drop-id="Ileum" style="top: 635px; left: 79px;"></li>
+<li class="dropzone" id="blank3" drop-id="Rectum" style="top: 499px; left: 74px;"></li>
+<li class="dropzone" id="blank4" drop-id="Crop" style="top: 70px; left: 521px;"></li>
+<li class="dropzone" id="blank5" drop-id="Proventriculus" style="top: 135px; left: 527px;"></li>
+<li class="dropzone" id="blank6" drop-id="Malpighian" tubules="" style="top: 204px; left: 539px;"></li> <li class="dropzone" id="blank7" drop-id="Colon" style="top: 428px; left: 81px;"></li>
+</ul>
+<img style="position:absolute" src="images/Crick ILO.png"> </div>
+
+    <!--Feedback messages once "submit" is clicked-->
+    <div class="dialogCorrect" title="Correct" style="display: none">
+        <div style="margin-top: 10px"> Well done!</div>
+    </div>
+
+    <div class="dialogIncorrect" title="Incorrect" style="display: none">
+        <div style="margin-top: 10px"> Please check your answers again. </div>
+    </div>
+
+</body>
+</html>

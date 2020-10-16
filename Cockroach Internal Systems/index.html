@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Custom Drag and Drop </title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" src="https://www.coursera.org/widget/coursera-connect.css">
+    <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+<ul id="allLabels">
+<li class="label" drag-id="Ganglion" correct="false"> Ganglion </li>
+<li class="label" drag-id="Ovary" correct="false"> Ovary </li>
+<li class="label" drag-id="Spiracle" correct="false"> Spiracle </li>
+<li class="label" drag-id="Ventriculus" correct="false"> Ventriculus </li>
+<li class="label" drag-id="Crop" correct="false"> Crop </li>
+<li class="label" drag-id="Malpighian" tubules="" correct="false"> Malpighian tubules </li> <li class="label" drag-id="Rectum" correct="false"> Rectum </li>
+<li class="label" drag-id="Ileum" correct="false"> Ileum </li>
+<li class="label" drag-id="Proventriculus" correct="false"> Proventriculus </li>
+<li class="label" drag-id="Colon" correct="false"> Colon </li>
+<li class="label" drag-id="Gastric" caeca="" correct="false"> Gastric caeca </li>
+</ul>
+
+            <div id="interface">
+               
+                <button id="reset"> Reset </button>
+                <button id="submit" style="background-color:#c6ebd9"> Submit </button>
+            </div>
+
+        </div>
+
+<div id="allParts"> <ul>
+<li class="dropzone" id="blank1" drop-id="Ganglion" style="top: 245px; left: 234px;"></li> <li class="dropzone" id="blank2" drop-id="Ovary" style="top: 621px; left: 70px;"></li>
+<li class="dropzone" id="blank3" drop-id="Spiracle" style="top: 238px; left: 57px;"></li>
+<li class="dropzone" id="blank4" drop-id="Ventriculus" style="top: 303px; left: 313px;"></li> <li class="dropzone" id="blank5" drop-id="Crop" style="top: 64px; left: 286px;"></li>
+<li class="dropzone" id="blank6" drop-id="Malpighian" tubules="" style="top: 586px; left: 439px;"></li> <li class="dropzone" id="blank7" drop-id="Rectum" style="top: 642px; left: 292px;"></li>
+<li class="dropzone" id="blank8" drop-id="Ileum" style="top: 644px; left: 539px;"></li>
+<li class="dropzone" id="blank9" drop-id="Proventriculus" style="top: 54px; left: 479px;"></li>
+<li class="dropzone" id="blank10" drop-id="Colon" style="top: 389px; left: 368px;"></li>
+<li class="dropzone" id="blank11" drop-id="Gastric" caeca="" style="top: 118px; left: 534px;"></li> </ul>
+<img style="position:absolute" src="images/roach ILO.png"> </div>
+
+    <!--Feedback messages once "submit" is clicked-->
+    <div class="dialogCorrect" title="Correct" style="display: none">
+        <div style="margin-top: 10px"> Well done!</div>
+    </div>
+
+    <div class="dialogIncorrect" title="Incorrect" style="display: none">
+        <div style="margin-top: 10px"> Please check your answers again. </div>
+    </div>
+
+</body>
+</html>
