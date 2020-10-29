@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Custom Drag and Drop </title>
+    <link href="css/default.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" src="https://www.coursera.org/widget/coursera-connect.css">
+    <script src="https://www.coursera.org/widget/coursera-widget-connect-v0.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <ul id="allLabels">
+<li class="label" drag-id="Obtect" correct="false"> Obtect </li>
+<li class="label" drag-id="Exarate" correct="false"> Exarate </li>
+<li class="label" drag-id="Coarctate" correct="false"> Coarctate </li>
+<li class="label" drag-id="Adecticous" correct="false"> Adecticous </li>
+<li class="label" drag-id="Decticous" correct="false"> Decticous </li>
+<li class="label" drag-id="Elateriform" correct="false"> Elateriform </li>
+<li class="label" drag-id="Scarabaeiform" correct="false"> Scarabaeiform </li> <li class="label" drag-id="Campodeiform" correct="false"> Campodeiform </li> <li class="label" drag-id="Eruciform" correct="false"> Eruciform </li>
+<li class="label" drag-id="Vermiform" correct="false"> Vermiform </li>
+</ul>
+
+
+            <div id="interface">
+                <div id="numCorrect" style="padding-bottom: 5px;"> Number Correct: 0 </div>
+                <button id="reset"> Reset </button>
+                <button id="submit" style="background-color:#c6ebd9"> Submit </button>
+            </div>
+
+        </div>
+
+        <div id="allParts"> <ul>
+<li class="dropzone" id="blank1" drop-id="Obtect" style="top: 273px; left: 391px;"></li>
+<li class="dropzone" id="blank2" drop-id="Exarate" style="top: 272px; left: 70px;"></li>
+<li class="dropzone" id="blank3" drop-id="Coarctate" style="top: 272px; left: 653px;"></li>
+<li class="dropzone" id="blank4" drop-id="Adecticous" style="top: 81px; left: 399px;"></li>
+<li class="dropzone" id="blank5" drop-id="Decticous" style="top: 82px; left: 73px;"></li>
+<li class="dropzone" id="blank6" drop-id="Elateriform" style="top: 672px; left: 661px;"></li>
+<li class="dropzone" id="blank7" drop-id="Scarabaeiform" style="top: 483px; left: 666px;"></li> 
+<li class="dropzone" id="blank8" drop-id="Campodeiform" style="top: 483px; left: 400px;"></li> 
+<li class="dropzone" id="blank9" drop-id="Eruciform" style="top: 483px; left: 75px;"></li>
+<li class="dropzone" id="blank10" drop-id="Vermiform" style="top: 677px; left: 155px;"></li>
+</ul>
+<img style="position:absolute" src="images/larva.pupa2.png"> </div>
+
+
+
+    </div>
+
+    <!--Feedback messages once "submit" is clicked-->
+    <div class="dialogCorrect" title="Correct" style="display: none">
+        <div style="margin-top: 10px"> Well done!</div>
+    </div>
+
+    <div class="dialogIncorrect" title="Incorrect" style="display: none">
+        <div style="margin-top: 10px"> Please check your answers again. </div>
+    </div>
+
+</body>
+</html>
